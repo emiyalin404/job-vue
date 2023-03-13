@@ -1,0 +1,26 @@
+p{
+    width: 500px;
+    background-color:rgb(193, 200, 207);
+    font-weight:bold;
+}
+a{
+    margin: 4px;
+    color: rgb(19, 0, 141);
+}
+
+.router-link-active {
+    color: red;
+}
+div{
+    font-size:21px;
+ color: blue; 
+ font-weight:bold;  
+}
+.font{
+    margin: auto 180px;
+    font-size: 30px;
+    display: table;
+}
+.active{
+    color:red
+}

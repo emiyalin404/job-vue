@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+</head>
+
+<body>
+  <div id="app-demo">
+  <ul>
+    <li v-for="(site,index) in sites">
+       {{site.text}}
+    </li>
+  </ul>
+  </div>
+ <script>
+    const app={
+        data(){
+            return{
+                sites: [{text:'suisei'},
+                        {text:'pekora'},
+                        {text:'marinn'},
+                        {text:'korone'},
+                        {text:'gura'},
+                        {text:'fubuki'},
+                        {text:'fureya'},
+                        {text:'koyori'},
+                        {text:'aqua'}
+                        ]
+            }
+        }
+    }
+
+    Vue.createApp(app).mount('#app-demo');
+ </script>
+</body>
+
+</html>

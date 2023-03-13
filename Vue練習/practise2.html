@@ -1,0 +1,34 @@
+<head>
+    <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+
+    <style>
+        @import url(practise2.css);
+    </style>
+</head>
+
+<body>
+    <div style="height: 80px;">
+        <p style="color: blue;">檢核規則：<br>
+            1. 用户名6-18個字符，可使用數字、字母、下划線，需以字母開頭<br>
+            2. 密碼6-18個字符(字母和數字), 大小寫字母和數字必須都要有</p>
+    </div>
+    <fieldset>
+        <legend>註冊:</legend>
+        <div id="app-demo">
+            <ul>
+                <li v-for="(item,index) in list">
+                    {{item.information}}
+                    <input type="text" 
+                    v-on:keyup="reversedMessage"
+                    :key="index" 
+                    v-model="item.inputmessage" />
+                    <p>{{item.message}}</p>
+                </li>
+            </ul><br>
+            <input class="btn" type="button" value="提交" @click="reversedMessage" />
+        </div>
+    </fieldset>
+
+    <script src="./practise2.js" />
+    </script>
+</body>

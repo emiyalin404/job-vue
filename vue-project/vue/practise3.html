@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+  <script src="https://unpkg.com/vue-router@4"></script>
+  <style>@import url(practise3.css);</style>
+</head>
+<body>
+    <div id="app">
+        <p>
+          <router-link to="/" >首頁</router-link>
+          <router-link to="/about1">測試畫面1</router-link>
+          <router-link to="/about2">測試畫面2</router-link>
+          <router-link to="/about3">測試畫面3</router-link>
+          <router-link to="/about4">測試畫面4</router-link>
+        </p>
+        <router-view></router-view>
+      </div>
+
+  <script src="./practise3.js"></script>
+</body>
+</html>

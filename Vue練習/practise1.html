@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+  <script src="https://unpkg.com/vue-router@4"></script>
+  <style>
+    @import url(practise1.css);
+  </style>
+  
+</head>
+
+<body>
+  <div id="app">
+    <custom-input v-model:message="message" v-model:message2="message2"></custom-input>
+    <p>使用computed計算後反轉字符串:{{reversedMessage}}</p>
+    <p>使用methods計算後反轉字符串:{{reversedMessage2()}}</p>
+  </div>
+ <script src="./practise1.js"></script>
+</body>
+
+</html>

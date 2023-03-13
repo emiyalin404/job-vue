@@ -1,0 +1,36 @@
+div {
+    text-align: left;
+    display: -webkit-inline-box;
+}
+.dlable{
+    display: grid;
+    width: 60px;
+    text-align:right;
+}
+.dli {
+    width: 180px;
+    display: inline-grid;
+}
+.dri {
+    text-align: left;
+    width: 200px;
+    display: grid;
+}
+input {
+    display: flex;
+    margin: auto;
+}
+p{
+    color: red;
+    height: 1px;
+    margin-top: 3px;
+    
+}
+.btn{
+    display: block;
+    height: 28;
+    margin-top: 75px;
+}
+/* label{
+    text-align:right;
+} */

@@ -1,0 +1,39 @@
+<head>
+    <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+
+    <style>
+        @import url(practise2.css);
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>註冊:</legend>
+        <div id="app-demo">
+            <div>
+                <div class="dlable">
+                    <label for="name">用戶名: </label>
+                    <label for="pawd"> 密碼: </label>
+                    <label for="email">Email: </label>
+                    <label for="phone">手機號: </label>
+                </div>
+                <div class="dri">
+                    <input v-model="message">
+                    <input v-model="message2" type="password">
+                    <input v-model="message3">
+                    <input v-model="message4">
+                </div>
+                <div class="dli">
+                    <p>{{reslt}}</p>
+                    <p>{{reslt2}}</p>
+                    <p>{{reslt3}}</p>
+                    <p>{{reslt4}}</p>
+                </div>
+            </div>
+            <input class="btn" type="button" value="提交" @click="reversedMessage" />
+        </div>
+    </fieldset>
+
+    <script src="./practise2.js" />
+    </script>
+</body>
